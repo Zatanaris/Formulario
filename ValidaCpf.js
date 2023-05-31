@@ -44,10 +44,3 @@ class ValidaCpf {
    }
 }
 
-/* const validaCpf = new ValidaCpf("070.987.720-03");
-
-if (validaCpf.Valida()) {
-   console.log("CPF valido.");
-} else {
-   console.log("CPF invalido, Digite um cpf valido.");
-} */
