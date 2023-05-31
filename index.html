@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Formulario</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <h1 class="title">Formulario de cadastro</h1>
+
+         <ul class="list">
+            <li>Nenhum campo pode esta vazio</li>
+            <li>Usuario só podera conter letras e/ou numeros</li>
+            <li>Usuario devera ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+         </ul>
+
+         <form action="/" method="post" class="form">
+            <div class="form--control">
+               <label for="inome">Nome</label>
+               <input type="text" name="nome" id="inome" class="Nome" />
+            </div>
+            <div class="form--control">
+               <label for="isobrenome">Sobrenome</label>
+               <input
+                  type="text"
+                  name="Sobrenome"
+                  id="isobrenome"
+                  class="Sobrenome"
+               />
+            </div>
+            <div class="form--control">
+               <label for="icpf">CPF</label>
+               <input type="text" name="CPF" id="icpf" class="CPF" />
+            </div>
+            <div class="form--control">
+               <label for="iuser">Usuario</label>
+               <input type="text" name="Usuario" id="iuser" class="Usuario" />
+            </div>
+            <div class="form--control">
+               <label for="iSenha">Senha</label>
+               <input type="password" name="Senha" id="iSenha" class="Senha" />
+            </div>
+            <div class="form--control">
+               <label for="icurrentSenha">Repetir Senha</label>
+               <input
+                  type="password"
+                  name="Repetir Senha"
+                  id="icurrentSenha"
+                  class="currentSenha"
+               />
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+         </form>
+      </div>
+
+      <script src="ValidaCpf.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
